@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+    <tlib-version>1.0</tlib-version>
+    <short-name>tianfang</short-name>
+    <uri>http://www.tianfang1314.cn/webapp</uri>
+    <tag>
+        <name>showRemoteIp</name>
+        <tag-class>cn.tf.tags.RemoteIPTags</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    
+    <tag>
+        <name>demo2</name>
+        <tag-class>cn.tf.tags.Demo2</tag-class>
+        <!-- 简单标签，如果出现主体内容，要使用scriptless -->
+        <body-content>scriptless</body-content>
+    </tag>
+    
+      <tag>
+        <name>demo3</name>
+        <tag-class>cn.tf.tags.Demo3</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    
+     <tag>
+        <name>demo4</name>
+        <tag-class>cn.tf.tags.Demo4</tag-class>
+        <body-content>scriptless</body-content>
+        <!-- 配置标签的属性 -->
+        <attribute>
+        	<name>count</name>
+        	<required>true</required>
+        	<!-- 是否允许使用表达式  -->
+        	<rtexprvalue>true</rtexprvalue>
+        </attribute>   
+    </tag>
+    
+    <tag>
+        <name>demo5</name>
+        <tag-class>cn.tf.tags.Demo5</tag-class>
+        <!-- 简单标签，如果出现主体内容，要使用scriptless -->
+        <body-content>scriptless</body-content>
+    </tag>
+    
+</taglib>
